@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bilbo+Swash+Caps&family=Inter:opsz,wght@14..32,500&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+body{
+    position: relative;
+    font-family: "Archivo", serif;
+    background-color: #f4f4f4; margin: 0; overflow:hidden;}
+#bgc {
+    width: 100%;
+    height: 100%;
+    background: url(bg.jpg) center top #f4f4f4;
+    overflow: hidden;
+    background-size: cover;
+}
+.mb-box{width: 416px; height: auto; padding:15px;  z-index: 2; overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.bb {
+    /* margin: 0 auto; */
+    width: 416px;
+    max-height: 609px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #999;
+    overflow: hidden;
+    background: url(../images/alpha-bg.png);
+    backdrop-filter: blur(5px);
+   
+}
+.bb h1{margin: 15px auto 0px; padding: 20px 0px 10px; width: 370px; font-size:15px; text-align: center; color: #883a78; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.bb_text {
+    max-height: 300px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 2px solid #ff66b2; /* Optional: Add a beautiful border */
+    border-radius: 10px; /* Optional: Make it rounded */
+    background: rgba(255, 255, 255, 0.1); /* Optional: Light transparent background */
+    color: ##FF13F0; /* Text color */
+    text-shadow: 0 0 10px #ff66b2, 0 0 20px #ff33a6; /* Optional: Glowing text */
+    font-size: 16px;
+}
+
+/* Optional: Customize Scrollbar */
+.bb_text::-webkit-scrollbar {
+    width: 6px;
+}
+
+.bb_text::-webkit-scrollbar-thumb {
+    background: #ff66b2; /* Pink scrollbar */
+    border-radius: 5px;
+}
+
+.bb_text::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Glowing effect */
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 10px #ff66b2, 0 0 20px #ff33a6, 0 0 30px #ff1493;
+    }
+    to {
+        text-shadow: 0 0 15px #ff99cc, 0 0 25px #ff66b2, 0 0 35px #ff33a6;
+    }
+}
+
+.bb_myname{text-align: right; padding: 0px 40px 20px; line-height: 30px; color: #FF10F0;}
+.mb-x{width: 500px; height: auto; overflow: hidden; margin-top: 260px;}
+.love_time{width: 100%; text-align: center; font-size: 14px; color:#da8e9c;}
+.love_time span{color:#da8e9c;}
+.musicbg{margin-left: -120px; filter: alpha(opacity=50); opacity: .5; position: fixed; bottom: 60px; left: 50%}
+.musicbg:hover{filter: alpha(opacity=90); opacity: .9}
+.banquan{width: 100%; text-align: center; color: #888; position: fixed; bottom: 30px; font-size:14px;}
+.banquan a{color: #888; text-decoration: none;}
+
+.next {text-align: center; padding: 0px 40px 20px; line-height: 30px; color: ##FF13F0;}
